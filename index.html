@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MEJA GACOR KEMBARQQ</title>
+
+<style>
+:root{
+    --gold:#FFD700;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:
+        linear-gradient(
+            rgba(0,0,0,.55),
+            rgba(0,0,0,.55)
+        ),
+        url('aa.jpg') center center / cover no-repeat fixed;
+    color:#fff;
+    min-height:100vh;
+    padding:20px;
+}
+
+.container{
+    width:min(1200px,100%);
+    margin:auto;
+}
+
+.header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.logo{
+    width:min(450px,80vw);
+    height:auto;
+    display:block;
+    margin:auto;
+    filter:drop-shadow(0 0 10px rgba(255,215,0,.6));
+}
+
+.header p{
+    color:#bdbdbd;
+    margin-top:10px;
+    letter-spacing:1px;
+    font-size:clamp(12px,2vw,16px);
+}
+
+.games-grid{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.card-link{
+    display:block;
+    width:min(450px,90%);
+    margin:auto;
+    text-decoration:none;
+}
+
+.card{
+    position:relative;
+    width:100%;
+    aspect-ratio:16 / 3;
+    overflow:hidden;
+    border-radius:16px;
+
+    background:linear-gradient(
+        145deg,
+        #111111,
+        #1b1b1b,
+        #2a2200
+    );
+
+    border:1px solid rgba(255,215,0,.4);
+    box-shadow:0 0 20px rgba(255,215,0,.15);
+    transition:.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 25px rgba(255,215,0,.3);
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-120%;
+    width:60%;
+    height:100%;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.25),
+        transparent
+    );
+    transform:skewX(-25deg);
+    transition:.8s;
+    z-index:2;
+}
+
+.card:hover::before{
+    left:150%;
+}
+
+.card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.footer{
+    margin-top:40px;
+    text-align:center;
+    color:#888;
+    font-size:.9rem;
+}
+
+/* POPUP */
+.popup{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.85);
+    z-index:9999;
+
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+    animation:fadeIn .3s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+.popup-content{
+    position:relative;
+}
+
+.popup-image{
+    width:min(90vw,700px);
+    max-height:85vh;
+    object-fit:contain;
+    border-radius:15px;
+    display:block;
+    box-shadow:0 0 25px rgba(255,215,0,.5);
+}
+
+.close{
+    position:absolute;
+    top:-15px;
+    right:-15px;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    background:var(--gold);
+    color:#000;
+    text-align:center;
+    line-height:35px;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    .games-grid{
+        gap:15px;
+    }
+
+    .card-link{
+        width:95%;
+    }
+}
+
+@media(max-width:480px){
+
+    .logo{
+        width:90%;
+    }
+
+    .footer{
+        font-size:.8rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <img src="logo.png" alt="KEMBARQQ" class="logo">
+        <p>SITUS PUSAT PKV TERPERCAYA</p>
+    </div>
+
+    <div class="games-grid">
+
+        <a href="https://kembarqqjitu.org/"
+           class="card-link"
+           target="_blank"
+           rel="noopener noreferrer">
+            <div class="card">
+                <img src="login.gif" alt="Login">
+            </div>
+        </a>
+
+        <a href="https://pkvrtp.dpnel.com"
+           class="card-link"
+           target="_blank"
+           rel="noopener noreferrer">
+            <div class="card">
+                <img src="meja.gif" alt="Meja Gacor">
+            </div>
+        </a>
+
+        <a href="https://starmpat.com/wakembarqq"
+           class="card-link"
+           target="_blank"
+           rel="noopener noreferrer">
+            <div class="card">
+                <img src="cs.gif" alt="Customer Service">
+            </div>
+        </a>
+
+    </div>
+
+    <div class="footer">
+        © KEMBARQQPKV
+    </div>
+
+</div>
+
+<!-- POPUP -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <img src="789.jpg" alt="Promo" class="popup-image">
+    </div>
+</div>
+
+<script>
+const popup = document.getElementById("popup");
+const closeBtn = document.querySelector(".close");
+
+window.addEventListener("load", () => {
+    popup.style.display = "flex";
+});
+
+closeBtn.addEventListener("click", () => {
+    popup.style.display = "none";
+});
+
+popup.addEventListener("click", (e) => {
+    if (e.target === popup) {
+        popup.style.display = "none";
+    }
+});
+</script>
+
+</body>
+</html>
